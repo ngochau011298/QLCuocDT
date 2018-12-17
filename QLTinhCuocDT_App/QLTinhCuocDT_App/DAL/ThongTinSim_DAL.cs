@@ -51,6 +51,10 @@ namespace QLTinhCuocDT_App.DAL
 
             if (index < 10)
             {
+                return word + "00" + index;
+            }
+            else if (index < 100)
+            {
                 return word + "0" + index;
             }
             else

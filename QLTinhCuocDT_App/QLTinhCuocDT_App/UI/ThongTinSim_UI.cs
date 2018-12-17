@@ -38,9 +38,18 @@ namespace QLTinhCuocDT_App.UI
 
             foreach (ThongTinSIM sim in thongTinSIMBindingSource)
             {
-                dvThongTinSim.Rows[row].Cells["TenKH"].Value = sim.KhachHang.TenKH;
+                if(sim.KhachHang.Flag == false)
+                {
+                    dvThongTinSim.Rows[row].Cells["TenKH"].Value = "FREE";
 
-                row++;
+                    row++;
+                }
+                else
+                {
+                    dvThongTinSim.Rows[row].Cells["TenKH"].Value = sim.KhachHang.TenKH;
+
+                    row++;
+                }
             }
 
             dvThongTinSim.ClearSelection();

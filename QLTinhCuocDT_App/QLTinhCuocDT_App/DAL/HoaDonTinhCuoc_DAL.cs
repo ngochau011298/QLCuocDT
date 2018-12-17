@@ -71,7 +71,7 @@ namespace QLTinhCuocDT_App.DAL
             }
         }
 
-        public decimal CalculateBill(string id, DateTime now, DateTime last, decimal fee)
+        public double CalculateBill(string id, DateTime now, DateTime last, decimal fee)
         {
             last = now.AddMonths(-1);
 
@@ -85,7 +85,7 @@ namespace QLTinhCuocDT_App.DAL
 
             decimal tongtien = sum + fee;
 
-            return tongtien;
+            return Convert.ToDouble(tongtien);
         }
     }
 }

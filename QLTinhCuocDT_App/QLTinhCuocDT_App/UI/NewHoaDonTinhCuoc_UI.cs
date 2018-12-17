@@ -122,13 +122,13 @@ namespace QLTinhCuocDT_App.UI
             }
             else
             {
-                tbxTongTien.Text = dal.CalculateBill(tbxIDSIM.Text, dtpNgayLapHD.Value, dtpNgayLapHD.Value, numPhiThueBao.Value).ToString();
+                tbxTongTien.Text = dal.CalculateBill(tbxIDSIM.Text, dtpNgayLapHD.Value, dtpNgayLapHD.Value, numPhiThueBao.Value).ToString("#,##0");
             }
         }
 
         private void dtpNgayLapHD_ValueChanged(object sender, EventArgs e)
         {
-            tbxTongTien.Text = dal.CalculateBill(tbxIDSIM.Text, dtpNgayLapHD.Value, dtpNgayLapHD.Value, numPhiThueBao.Value).ToString();
+            tbxTongTien.Text = dal.CalculateBill(tbxIDSIM.Text, dtpNgayLapHD.Value, dtpNgayLapHD.Value, numPhiThueBao.Value).ToString("#,##0");
         }
 
         private void numPhiThueBao_ValueChanged(object sender, EventArgs e)
@@ -139,7 +139,7 @@ namespace QLTinhCuocDT_App.UI
             }
             else
             {
-                tbxTongTien.Text = dal.CalculateBill(tbxIDSIM.Text, dtpNgayLapHD.Value, dtpNgayLapHD.Value, numPhiThueBao.Value).ToString();
+                tbxTongTien.Text = dal.CalculateBill(tbxIDSIM.Text, dtpNgayLapHD.Value, dtpNgayLapHD.Value, numPhiThueBao.Value).ToString("#,##0");
             }
         }
     }

@@ -83,7 +83,7 @@ namespace QLTinhCuocDT_App.UI
                 tbxMaHHDK.Text = row.Cells["MaHDDK"].Value.ToString();
                 tbxIDSIM.Text = row.Cells["IDSIM"].Value.ToString();
                 tbxTenKH.Text = row.Cells["TenKH"].Value.ToString();
-                tbxChiPhiDK.Text = row.Cells["ChiPhiDangKy"].Value.ToString();
+                tbxChiPhiDK.Text = Convert.ToDecimal(row.Cells["ChiPhiDangKy"].Value).ToString("#,##0");
             }
         }
 

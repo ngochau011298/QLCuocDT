@@ -86,8 +86,8 @@ namespace QLTinhCuocDT_App.UI
                 DataGridViewRow row = dvHoaDonTinhCuoc.Rows[e.RowIndex];
                 tbxMaHDTC.Text = row.Cells["MaHDTC"].Value.ToString();
                 tbxIDSIM.Text = row.Cells["IDSIM"].Value.ToString();
-                tbxPhiThueBao.Text = row.Cells["PhiThueBao"].Value.ToString();
-                tbxTongTien.Text = row.Cells["TongTien"].Value.ToString();
+                tbxPhiThueBao.Text = Convert.ToDecimal(row.Cells["PhiThueBao"].Value).ToString("#,##0");
+                tbxTongTien.Text = Convert.ToDecimal(row.Cells["TongTien"].Value).ToString("#,##0");
                 tbxNgayLapHD.Text = Convert.ToDateTime(row.Cells["NgayLapHD"].Value).ToShortDateString();
 
                 if(row.Cells["ThanhToan"].Value.Equals(true))
