@@ -32,7 +32,7 @@ namespace QLTinhCuocDT_App.UI
 
         private void NewHoaDonTinhCuoc_UI_Load(object sender, EventArgs e)
         {
-            thongTinSIMBindingSource.DataSource = db.ThongTinSIM.Where(x => x.Flag == true).ToList();
+            thongTinSIMBindingSource.DataSource = db.ThongTinSIM.Where(x => x.Flag == true).Where(y => y.KhachHang.Flag == true).ToList();
 
             dvThongTinSIM.DataSource = thongTinSIMBindingSource;
 
