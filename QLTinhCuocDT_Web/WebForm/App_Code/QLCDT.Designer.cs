@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'D:\Documents\4th Year\1st Semester\n-Tier Model\BT\Tính cước điện thoại\QLTinhCuocDT\QLTinhCuocDT_Web\WebForm\App_Code\QLCDT.edmx'. 
+﻿// T4 code generation is enabled for model 'F:\Đồ án\QLTinhCuocDT\QLTinhCuocDT_Web\WebForm\App_Code\QLCDT.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

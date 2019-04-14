@@ -23,3 +23,28 @@ D:\Documents\4th Year\1st Semester\n-Tier Model\BT\Tính cước điện thoại
 D:\Documents\4th Year\1st Semester\n-Tier Model\BT\Tính cước điện thoại\QLTinhCuocDT\QLTinhCuocDT_App\QLTinhCuocDT_App\obj\Debug\QLTinhCuocDT_App.UI.NewThongTinSIM_UI.resources
 D:\Documents\4th Year\1st Semester\n-Tier Model\BT\Tính cước điện thoại\QLTinhCuocDT\QLTinhCuocDT_App\QLTinhCuocDT_App\obj\Debug\QLTinhCuocDT_App.UI.HoaDonDangKy_UI.resources
 D:\Documents\4th Year\1st Semester\n-Tier Model\BT\Tính cước điện thoại\QLTinhCuocDT\QLTinhCuocDT_App\QLTinhCuocDT_App\obj\Debug\QLTinhCuocDT_App.UI.NewKhachHang_UI.resources
+F:\Đồ án\QLTinhCuocDT\QLTinhCuocDT_App\QLTinhCuocDT_App\bin\Debug\QLTinhCuocDT_App.exe.config
+F:\Đồ án\QLTinhCuocDT\QLTinhCuocDT_App\QLTinhCuocDT_App\bin\Debug\QLTinhCuocDT_App.exe
+F:\Đồ án\QLTinhCuocDT\QLTinhCuocDT_App\QLTinhCuocDT_App\bin\Debug\QLTinhCuocDT_App.pdb
+F:\Đồ án\QLTinhCuocDT\QLTinhCuocDT_App\QLTinhCuocDT_App\bin\Debug\EntityFramework.dll
+F:\Đồ án\QLTinhCuocDT\QLTinhCuocDT_App\QLTinhCuocDT_App\bin\Debug\EntityFramework.SqlServer.dll
+F:\Đồ án\QLTinhCuocDT\QLTinhCuocDT_App\QLTinhCuocDT_App\bin\Debug\EntityFramework.xml
+F:\Đồ án\QLTinhCuocDT\QLTinhCuocDT_App\QLTinhCuocDT_App\bin\Debug\EntityFramework.SqlServer.xml
+F:\Đồ án\QLTinhCuocDT\QLTinhCuocDT_App\QLTinhCuocDT_App\obj\Debug\QLTinhCuocDT_App.csprojAssemblyReference.cache
+F:\Đồ án\QLTinhCuocDT\QLTinhCuocDT_App\QLTinhCuocDT_App\obj\Debug\QLTinhCuocDT_App.Form1.resources
+F:\Đồ án\QLTinhCuocDT\QLTinhCuocDT_App\QLTinhCuocDT_App\obj\Debug\QLTinhCuocDT_App.Properties.Resources.resources
+F:\Đồ án\QLTinhCuocDT\QLTinhCuocDT_App\QLTinhCuocDT_App\obj\Debug\QLTinhCuocDT_App.UI.ChiTietSuDung_UI.resources
+F:\Đồ án\QLTinhCuocDT\QLTinhCuocDT_App\QLTinhCuocDT_App\obj\Debug\QLTinhCuocDT_App.UI.DetailsHoaDonTinhCuoc_UI.resources
+F:\Đồ án\QLTinhCuocDT\QLTinhCuocDT_App\QLTinhCuocDT_App\obj\Debug\QLTinhCuocDT_App.UI.GiaCuoc_UI.resources
+F:\Đồ án\QLTinhCuocDT\QLTinhCuocDT_App\QLTinhCuocDT_App\obj\Debug\QLTinhCuocDT_App.UI.HoaDonDangKy_UI.resources
+F:\Đồ án\QLTinhCuocDT\QLTinhCuocDT_App\QLTinhCuocDT_App\obj\Debug\QLTinhCuocDT_App.UI.HoaDonTinhCuoc_UI.resources
+F:\Đồ án\QLTinhCuocDT\QLTinhCuocDT_App\QLTinhCuocDT_App\obj\Debug\QLTinhCuocDT_App.UI.KhachHang_UI.resources
+F:\Đồ án\QLTinhCuocDT\QLTinhCuocDT_App\QLTinhCuocDT_App\obj\Debug\QLTinhCuocDT_App.UI.NewHoaDonTinhCuoc_UI.resources
+F:\Đồ án\QLTinhCuocDT\QLTinhCuocDT_App\QLTinhCuocDT_App\obj\Debug\QLTinhCuocDT_App.UI.NewKhachHang_UI.resources
+F:\Đồ án\QLTinhCuocDT\QLTinhCuocDT_App\QLTinhCuocDT_App\obj\Debug\QLTinhCuocDT_App.UI.NewThongTinSIM_UI.resources
+F:\Đồ án\QLTinhCuocDT\QLTinhCuocDT_App\QLTinhCuocDT_App\obj\Debug\QLTinhCuocDT_App.UI.ThongTinSim_UI.resources
+F:\Đồ án\QLTinhCuocDT\QLTinhCuocDT_App\QLTinhCuocDT_App\obj\Debug\QLTinhCuocDT_App.csproj.GenerateResource.cache
+F:\Đồ án\QLTinhCuocDT\QLTinhCuocDT_App\QLTinhCuocDT_App\obj\Debug\QLTinhCuocDT_App.csproj.CoreCompileInputs.cache
+F:\Đồ án\QLTinhCuocDT\QLTinhCuocDT_App\QLTinhCuocDT_App\obj\Debug\QLTinhCuocDT_App.csproj.CopyComplete
+F:\Đồ án\QLTinhCuocDT\QLTinhCuocDT_App\QLTinhCuocDT_App\obj\Debug\QLTinhCuocDT_App.exe
+F:\Đồ án\QLTinhCuocDT\QLTinhCuocDT_App\QLTinhCuocDT_App\obj\Debug\QLTinhCuocDT_App.pdb
