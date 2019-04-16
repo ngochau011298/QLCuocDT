@@ -35,3 +35,14 @@ F:\Đồ án\QLTinhCuocDT\Random_File\obj\Debug\Random_File.csproj.CoreCompileIn
 F:\Đồ án\QLTinhCuocDT\Random_File\obj\Debug\Random_File.csproj.CopyComplete
 F:\Đồ án\QLTinhCuocDT\Random_File\obj\Debug\Random_File.exe
 F:\Đồ án\QLTinhCuocDT\Random_File\obj\Debug\Random_File.pdb
+F:\doancdt\Random_File\bin\Debug\Random_File.exe.config
+F:\doancdt\Random_File\bin\Debug\Random_File.exe
+F:\doancdt\Random_File\bin\Debug\Random_File.pdb
+F:\doancdt\Random_File\obj\Debug\Random_File.csprojResolveAssemblyReference.cache
+F:\doancdt\Random_File\obj\Debug\Random_File.Form1.resources
+F:\doancdt\Random_File\obj\Debug\Random_File.Properties.Resources.resources
+F:\doancdt\Random_File\obj\Debug\Random_File.csproj.GenerateResource.cache
+F:\doancdt\Random_File\obj\Debug\Random_File.csproj.CoreCompileInputs.cache
+F:\doancdt\Random_File\obj\Debug\Random_File.csproj.CopyComplete
+F:\doancdt\Random_File\obj\Debug\Random_File.exe
+F:\doancdt\Random_File\obj\Debug\Random_File.pdb
