@@ -38,11 +38,7 @@
             this.sua = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dvThongTinSim = new System.Windows.Forms.DataGridView();
-            this.IDSIM = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayDangKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayHetHan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.thongTinSIMBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -58,14 +54,18 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.IDSIM = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayDangKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayHetHan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.thongTinSIMBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvThongTinSim)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.thongTinSIMBindingSource)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.thongTinSIMBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // xoa
@@ -102,7 +102,7 @@
             this.tbxsearch.Margin = new System.Windows.Forms.Padding(4);
             this.tbxsearch.Name = "tbxsearch";
             this.tbxsearch.Size = new System.Drawing.Size(234, 20);
-            this.tbxsearch.TabIndex = 13;
+            this.tbxsearch.TabIndex = 8;
             // 
             // label9
             // 
@@ -123,7 +123,7 @@
             this.retype.Margin = new System.Windows.Forms.Padding(4);
             this.retype.Name = "retype";
             this.retype.Size = new System.Drawing.Size(109, 33);
-            this.retype.TabIndex = 8;
+            this.retype.TabIndex = 10;
             this.retype.Text = "Làm mới";
             this.retype.UseVisualStyleBackColor = false;
             this.retype.Click += new System.EventHandler(this.retype_Click);
@@ -158,7 +158,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox3.BackColor = System.Drawing.Color.PeachPuff;
             this.groupBox3.Controls.Add(this.dvThongTinSim);
             this.groupBox3.Location = new System.Drawing.Point(396, 42);
             this.groupBox3.Name = "groupBox3";
@@ -187,13 +187,6 @@
             this.dvThongTinSim.TabIndex = 0;
             this.dvThongTinSim.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvThongTinSim_CellClick);
             // 
-            // IDSIM
-            // 
-            this.IDSIM.DataPropertyName = "IDSIM";
-            this.IDSIM.HeaderText = "IDSIM";
-            this.IDSIM.Name = "IDSIM";
-            this.IDSIM.ReadOnly = true;
-            // 
             // TenKH
             // 
             this.TenKH.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -201,29 +194,9 @@
             this.TenKH.Name = "TenKH";
             this.TenKH.ReadOnly = true;
             // 
-            // NgayDangKy
-            // 
-            this.NgayDangKy.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.NgayDangKy.DataPropertyName = "NgayDangKy";
-            this.NgayDangKy.HeaderText = "Ngày đăng ký";
-            this.NgayDangKy.Name = "NgayDangKy";
-            this.NgayDangKy.ReadOnly = true;
-            // 
-            // NgayHetHan
-            // 
-            this.NgayHetHan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.NgayHetHan.DataPropertyName = "NgayHetHan";
-            this.NgayHetHan.HeaderText = "Ngày hết hạn";
-            this.NgayHetHan.Name = "NgayHetHan";
-            this.NgayHetHan.ReadOnly = true;
-            // 
-            // thongTinSIMBindingSource
-            // 
-            this.thongTinSIMBindingSource.DataSource = typeof(QLTinhCuocDT_App.Entity.ThongTinSIM);
-            // 
             // groupBox4
             // 
-            this.groupBox4.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox4.BackColor = System.Drawing.Color.PeachPuff;
             this.groupBox4.Controls.Add(this.tbxsearch);
             this.groupBox4.Controls.Add(this.label9);
             this.groupBox4.Controls.Add(this.retype);
@@ -250,7 +223,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox2.BackColor = System.Drawing.Color.PeachPuff;
             this.groupBox2.Controls.Add(this.xoa);
             this.groupBox2.Controls.Add(this.sua);
             this.groupBox2.Controls.Add(this.them);
@@ -263,7 +236,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox1.BackColor = System.Drawing.Color.PeachPuff;
             this.groupBox1.Controls.Add(this.dtpNgayHetHan);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.tbxTenKH);
@@ -286,7 +259,7 @@
             this.dtpNgayHetHan.Location = new System.Drawing.Point(121, 111);
             this.dtpNgayHetHan.Name = "dtpNgayHetHan";
             this.dtpNgayHetHan.Size = new System.Drawing.Size(234, 22);
-            this.dtpNgayHetHan.TabIndex = 22;
+            this.dtpNgayHetHan.TabIndex = 4;
             // 
             // label1
             // 
@@ -306,7 +279,7 @@
             this.tbxTenKH.Name = "tbxTenKH";
             this.tbxTenKH.ReadOnly = true;
             this.tbxTenKH.Size = new System.Drawing.Size(234, 22);
-            this.tbxTenKH.TabIndex = 20;
+            this.tbxTenKH.TabIndex = 2;
             // 
             // tbxIDSIM
             // 
@@ -316,7 +289,7 @@
             this.tbxIDSIM.Name = "tbxIDSIM";
             this.tbxIDSIM.ReadOnly = true;
             this.tbxIDSIM.Size = new System.Drawing.Size(234, 22);
-            this.tbxIDSIM.TabIndex = 18;
+            this.tbxIDSIM.TabIndex = 1;
             // 
             // tbxNgayDangKy
             // 
@@ -326,7 +299,7 @@
             this.tbxNgayDangKy.Name = "tbxNgayDangKy";
             this.tbxNgayDangKy.ReadOnly = true;
             this.tbxNgayDangKy.Size = new System.Drawing.Size(234, 22);
-            this.tbxNgayDangKy.TabIndex = 17;
+            this.tbxNgayDangKy.TabIndex = 3;
             // 
             // label4
             // 
@@ -360,6 +333,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.PeachPuff;
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -382,18 +356,49 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.DarkRed;
+            this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.button1.Location = new System.Drawing.Point(12, 11);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(115, 23);
             this.button1.TabIndex = 0;
             this.button1.Text = "Trở về danh mục";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // IDSIM
+            // 
+            this.IDSIM.DataPropertyName = "IDSIM";
+            this.IDSIM.HeaderText = "IDSIM";
+            this.IDSIM.Name = "IDSIM";
+            this.IDSIM.ReadOnly = true;
+            // 
+            // NgayDangKy
+            // 
+            this.NgayDangKy.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.NgayDangKy.DataPropertyName = "NgayDangKy";
+            this.NgayDangKy.HeaderText = "Ngày đăng ký";
+            this.NgayDangKy.Name = "NgayDangKy";
+            this.NgayDangKy.ReadOnly = true;
+            // 
+            // NgayHetHan
+            // 
+            this.NgayHetHan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.NgayHetHan.DataPropertyName = "NgayHetHan";
+            this.NgayHetHan.HeaderText = "Ngày hết hạn";
+            this.NgayHetHan.Name = "NgayHetHan";
+            this.NgayHetHan.ReadOnly = true;
+            // 
+            // thongTinSIMBindingSource
+            // 
+            this.thongTinSIMBindingSource.DataSource = typeof(QLTinhCuocDT_App.Entity.ThongTinSIM);
             // 
             // ThongTinSim_UI
             // 
+            this.AcceptButton = this.them;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.button1;
             this.ClientSize = new System.Drawing.Size(836, 320);
             this.Controls.Add(this.panel1);
             this.Name = "ThongTinSim_UI";
@@ -402,7 +407,6 @@
             this.Load += new System.EventHandler(this.ThongTinSim_UI_Load);
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dvThongTinSim)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.thongTinSIMBindingSource)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -411,6 +415,7 @@
             this.groupBox1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.thongTinSIMBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -93,7 +93,7 @@
             this.tbxPhiThueBao.Name = "tbxPhiThueBao";
             this.tbxPhiThueBao.ReadOnly = true;
             this.tbxPhiThueBao.Size = new System.Drawing.Size(174, 22);
-            this.tbxPhiThueBao.TabIndex = 17;
+            this.tbxPhiThueBao.TabIndex = 3;
             // 
             // tbxTongTien
             // 
@@ -103,11 +103,11 @@
             this.tbxTongTien.Name = "tbxTongTien";
             this.tbxTongTien.ReadOnly = true;
             this.tbxTongTien.Size = new System.Drawing.Size(174, 22);
-            this.tbxTongTien.TabIndex = 11;
+            this.tbxTongTien.TabIndex = 4;
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox2.BackColor = System.Drawing.Color.PeachPuff;
             this.groupBox2.Controls.Add(this.tbxNgayLapHD);
             this.groupBox2.Controls.Add(this.tbxMaHDTC);
             this.groupBox2.Controls.Add(this.label3);
@@ -135,7 +135,7 @@
             this.tbxNgayLapHD.Name = "tbxNgayLapHD";
             this.tbxNgayLapHD.ReadOnly = true;
             this.tbxNgayLapHD.Size = new System.Drawing.Size(174, 22);
-            this.tbxNgayLapHD.TabIndex = 23;
+            this.tbxNgayLapHD.TabIndex = 1;
             // 
             // tbxMaHDTC
             // 
@@ -164,7 +164,7 @@
             this.tbxIDSIM.Name = "tbxIDSIM";
             this.tbxIDSIM.ReadOnly = true;
             this.tbxIDSIM.Size = new System.Drawing.Size(174, 22);
-            this.tbxIDSIM.TabIndex = 20;
+            this.tbxIDSIM.TabIndex = 2;
             // 
             // label2
             // 
@@ -190,6 +190,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.PeachPuff;
             this.panel1.Controls.Add(this.label8);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -200,13 +201,14 @@
             // cancel
             // 
             this.cancel.BackColor = System.Drawing.Color.Azure;
+            this.cancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cancel.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.cancel.Location = new System.Drawing.Point(224, 35);
             this.cancel.Margin = new System.Windows.Forms.Padding(4);
             this.cancel.Name = "cancel";
             this.cancel.Size = new System.Drawing.Size(138, 47);
-            this.cancel.TabIndex = 7;
+            this.cancel.TabIndex = 8;
             this.cancel.Text = "Trở về";
             this.cancel.UseVisualStyleBackColor = false;
             this.cancel.Click += new System.EventHandler(this.cancel_Click);
@@ -220,14 +222,14 @@
             this.email.Margin = new System.Windows.Forms.Padding(4);
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(160, 47);
-            this.email.TabIndex = 6;
+            this.email.TabIndex = 7;
             this.email.Text = "Gửi Email đình chỉ";
             this.email.UseVisualStyleBackColor = false;
             this.email.Click += new System.EventHandler(this.email_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox1.BackColor = System.Drawing.Color.PeachPuff;
             this.groupBox1.Controls.Add(this.tbxHanChot);
             this.groupBox1.Controls.Add(this.ckbIsOver);
             this.groupBox1.Controls.Add(this.labelIsOver);
@@ -248,7 +250,7 @@
             this.tbxHanChot.Name = "tbxHanChot";
             this.tbxHanChot.ReadOnly = true;
             this.tbxHanChot.Size = new System.Drawing.Size(174, 22);
-            this.tbxHanChot.TabIndex = 24;
+            this.tbxHanChot.TabIndex = 5;
             // 
             // ckbIsOver
             // 
@@ -257,7 +259,7 @@
             this.ckbIsOver.Location = new System.Drawing.Point(238, 92);
             this.ckbIsOver.Name = "ckbIsOver";
             this.ckbIsOver.Size = new System.Drawing.Size(15, 14);
-            this.ckbIsOver.TabIndex = 23;
+            this.ckbIsOver.TabIndex = 6;
             this.ckbIsOver.UseVisualStyleBackColor = true;
             // 
             // labelIsOver
@@ -284,6 +286,7 @@
             // 
             // Chuni
             // 
+            this.Chuni.BackColor = System.Drawing.Color.PeachPuff;
             this.Chuni.Controls.Add(this.cancel);
             this.Chuni.Controls.Add(this.email);
             this.Chuni.Location = new System.Drawing.Point(377, 215);
@@ -295,8 +298,10 @@
             // 
             // DetailsHoaDonTinhCuoc_UI
             // 
+            this.AcceptButton = this.email;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.cancel;
             this.ClientSize = new System.Drawing.Size(775, 319);
             this.ControlBox = false;
             this.Controls.Add(this.Chuni);

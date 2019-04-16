@@ -57,27 +57,28 @@
             this.tim = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dvHoaDonTinhCuoc = new System.Windows.Forms.DataGridView();
+            this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.MaHDTC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IDSIM = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PhiThueBao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TongTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayLapHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ThanhToan = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.hoaDonTinhCuocBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvHoaDonTinhCuoc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hoaDonTinhCuocBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hoaDonTinhCuocBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.PeachPuff;
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -100,17 +101,20 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.DarkRed;
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.button1.Location = new System.Drawing.Point(12, 11);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(115, 23);
-            this.button1.TabIndex = 0;
+            this.button1.TabIndex = 13;
             this.button1.Text = "Trở về danh mục";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox1.BackColor = System.Drawing.Color.PeachPuff;
             this.groupBox1.Controls.Add(this.email);
             this.groupBox1.Controls.Add(this.ckbThanhToan);
             this.groupBox1.Controls.Add(this.tbxNgayLapHD);
@@ -141,7 +145,7 @@
             this.email.Margin = new System.Windows.Forms.Padding(4);
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(109, 33);
-            this.email.TabIndex = 22;
+            this.email.TabIndex = 6;
             this.email.Text = "Gửi Email";
             this.email.UseVisualStyleBackColor = false;
             this.email.Click += new System.EventHandler(this.email_Click);
@@ -152,7 +156,7 @@
             this.ckbThanhToan.Location = new System.Drawing.Point(160, 186);
             this.ckbThanhToan.Name = "ckbThanhToan";
             this.ckbThanhToan.Size = new System.Drawing.Size(15, 14);
-            this.ckbThanhToan.TabIndex = 21;
+            this.ckbThanhToan.TabIndex = 5;
             this.ckbThanhToan.UseVisualStyleBackColor = true;
             // 
             // tbxNgayLapHD
@@ -163,7 +167,7 @@
             this.tbxNgayLapHD.Name = "tbxNgayLapHD";
             this.tbxNgayLapHD.ReadOnly = true;
             this.tbxNgayLapHD.Size = new System.Drawing.Size(234, 22);
-            this.tbxNgayLapHD.TabIndex = 20;
+            this.tbxNgayLapHD.TabIndex = 4;
             // 
             // tbxIDSIM
             // 
@@ -173,7 +177,7 @@
             this.tbxIDSIM.Name = "tbxIDSIM";
             this.tbxIDSIM.ReadOnly = true;
             this.tbxIDSIM.Size = new System.Drawing.Size(234, 22);
-            this.tbxIDSIM.TabIndex = 18;
+            this.tbxIDSIM.TabIndex = 3;
             // 
             // tbxPhiThueBao
             // 
@@ -183,7 +187,7 @@
             this.tbxPhiThueBao.Name = "tbxPhiThueBao";
             this.tbxPhiThueBao.ReadOnly = true;
             this.tbxPhiThueBao.Size = new System.Drawing.Size(234, 22);
-            this.tbxPhiThueBao.TabIndex = 17;
+            this.tbxPhiThueBao.TabIndex = 1;
             // 
             // label6
             // 
@@ -203,7 +207,7 @@
             this.tbxTongTien.Name = "tbxTongTien";
             this.tbxTongTien.ReadOnly = true;
             this.tbxTongTien.Size = new System.Drawing.Size(234, 22);
-            this.tbxTongTien.TabIndex = 11;
+            this.tbxTongTien.TabIndex = 2;
             // 
             // label5
             // 
@@ -266,7 +270,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox2.BackColor = System.Drawing.Color.PeachPuff;
             this.groupBox2.Controls.Add(this.xoa);
             this.groupBox2.Controls.Add(this.sua);
             this.groupBox2.Controls.Add(this.them);
@@ -286,7 +290,7 @@
             this.xoa.Margin = new System.Windows.Forms.Padding(4);
             this.xoa.Name = "xoa";
             this.xoa.Size = new System.Drawing.Size(109, 33);
-            this.xoa.TabIndex = 7;
+            this.xoa.TabIndex = 9;
             this.xoa.Text = "Xóa";
             this.xoa.UseVisualStyleBackColor = false;
             this.xoa.Click += new System.EventHandler(this.xoa_Click);
@@ -300,7 +304,7 @@
             this.sua.Margin = new System.Windows.Forms.Padding(4);
             this.sua.Name = "sua";
             this.sua.Size = new System.Drawing.Size(109, 33);
-            this.sua.TabIndex = 6;
+            this.sua.TabIndex = 8;
             this.sua.Text = "Cập nhật";
             this.sua.UseVisualStyleBackColor = false;
             this.sua.Click += new System.EventHandler(this.sua_Click);
@@ -314,14 +318,14 @@
             this.them.Margin = new System.Windows.Forms.Padding(4);
             this.them.Name = "them";
             this.them.Size = new System.Drawing.Size(109, 33);
-            this.them.TabIndex = 5;
+            this.them.TabIndex = 7;
             this.them.Text = "Thêm";
             this.them.UseVisualStyleBackColor = false;
             this.them.Click += new System.EventHandler(this.them_Click);
             // 
             // groupBox4
             // 
-            this.groupBox4.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox4.BackColor = System.Drawing.Color.PeachPuff;
             this.groupBox4.Controls.Add(this.tbxsearch);
             this.groupBox4.Controls.Add(this.label9);
             this.groupBox4.Controls.Add(this.retype);
@@ -339,7 +343,7 @@
             this.tbxsearch.Margin = new System.Windows.Forms.Padding(4);
             this.tbxsearch.Name = "tbxsearch";
             this.tbxsearch.Size = new System.Drawing.Size(234, 20);
-            this.tbxsearch.TabIndex = 13;
+            this.tbxsearch.TabIndex = 10;
             // 
             // label9
             // 
@@ -360,7 +364,7 @@
             this.retype.Margin = new System.Windows.Forms.Padding(4);
             this.retype.Name = "retype";
             this.retype.Size = new System.Drawing.Size(109, 33);
-            this.retype.TabIndex = 8;
+            this.retype.TabIndex = 12;
             this.retype.Text = "Làm mới";
             this.retype.UseVisualStyleBackColor = false;
             this.retype.Click += new System.EventHandler(this.retype_Click);
@@ -374,14 +378,14 @@
             this.tim.Margin = new System.Windows.Forms.Padding(4);
             this.tim.Name = "tim";
             this.tim.Size = new System.Drawing.Size(109, 33);
-            this.tim.TabIndex = 9;
+            this.tim.TabIndex = 11;
             this.tim.Text = "Tìm kiếm";
             this.tim.UseVisualStyleBackColor = false;
             this.tim.Click += new System.EventHandler(this.tim_Click);
             // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox3.BackColor = System.Drawing.Color.PeachPuff;
             this.groupBox3.Controls.Add(this.dvHoaDonTinhCuoc);
             this.groupBox3.Location = new System.Drawing.Point(403, 42);
             this.groupBox3.Name = "groupBox3";
@@ -413,6 +417,26 @@
             this.dvHoaDonTinhCuoc.TabIndex = 0;
             this.dvHoaDonTinhCuoc.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvHoaDonTinhCuoc_CellClick);
             // 
+            // TenKH
+            // 
+            this.TenKH.HeaderText = "Tên khách hàng";
+            this.TenKH.Name = "TenKH";
+            this.TenKH.ReadOnly = true;
+            this.TenKH.Width = 125;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.groupBox3);
+            this.panel1.Controls.Add(this.groupBox4);
+            this.panel1.Controls.Add(this.groupBox2);
+            this.panel1.Controls.Add(this.groupBox1);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(836, 373);
+            this.panel1.TabIndex = 2;
+            // 
             // MaHDTC
             // 
             this.MaHDTC.DataPropertyName = "MaHDTC";
@@ -426,13 +450,6 @@
             this.IDSIM.HeaderText = "IDSIM";
             this.IDSIM.Name = "IDSIM";
             this.IDSIM.ReadOnly = true;
-            // 
-            // TenKH
-            // 
-            this.TenKH.HeaderText = "Tên khách hàng";
-            this.TenKH.Name = "TenKH";
-            this.TenKH.ReadOnly = true;
-            this.TenKH.Width = 125;
             // 
             // PhiThueBao
             // 
@@ -469,23 +486,12 @@
             // 
             this.hoaDonTinhCuocBindingSource.DataSource = typeof(QLTinhCuocDT_App.Entity.HoaDonTinhCuoc);
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.groupBox3);
-            this.panel1.Controls.Add(this.groupBox4);
-            this.panel1.Controls.Add(this.groupBox2);
-            this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(836, 373);
-            this.panel1.TabIndex = 2;
-            // 
             // HoaDonTinhCuoc_UI
             // 
+            this.AcceptButton = this.them;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.button1;
             this.ClientSize = new System.Drawing.Size(836, 373);
             this.Controls.Add(this.panel1);
             this.Name = "HoaDonTinhCuoc_UI";
@@ -501,8 +507,8 @@
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dvHoaDonTinhCuoc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hoaDonTinhCuocBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.hoaDonTinhCuocBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

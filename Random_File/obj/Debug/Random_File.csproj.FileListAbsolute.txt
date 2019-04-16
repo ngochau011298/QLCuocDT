@@ -24,3 +24,14 @@ D:\Documents\4th Year\1st Semester\n-Tier Model\BT\Tính cước điện thoại
 D:\Documents\4th Year\1st Semester\n-Tier Model\BT\Tính cước điện thoại\QLTinhCuocDT\Random_File\obj\Debug\Random_File.csproj.CopyComplete
 D:\Documents\4th Year\1st Semester\n-Tier Model\BT\Tính cước điện thoại\QLTinhCuocDT\Random_File\obj\Debug\Random_File.exe
 D:\Documents\4th Year\1st Semester\n-Tier Model\BT\Tính cước điện thoại\QLTinhCuocDT\Random_File\obj\Debug\Random_File.pdb
+F:\Đồ án\QLTinhCuocDT\Random_File\bin\Debug\Random_File.exe.config
+F:\Đồ án\QLTinhCuocDT\Random_File\bin\Debug\Random_File.exe
+F:\Đồ án\QLTinhCuocDT\Random_File\bin\Debug\Random_File.pdb
+F:\Đồ án\QLTinhCuocDT\Random_File\obj\Debug\Random_File.csprojAssemblyReference.cache
+F:\Đồ án\QLTinhCuocDT\Random_File\obj\Debug\Random_File.Form1.resources
+F:\Đồ án\QLTinhCuocDT\Random_File\obj\Debug\Random_File.Properties.Resources.resources
+F:\Đồ án\QLTinhCuocDT\Random_File\obj\Debug\Random_File.csproj.GenerateResource.cache
+F:\Đồ án\QLTinhCuocDT\Random_File\obj\Debug\Random_File.csproj.CoreCompileInputs.cache
+F:\Đồ án\QLTinhCuocDT\Random_File\obj\Debug\Random_File.csproj.CopyComplete
+F:\Đồ án\QLTinhCuocDT\Random_File\obj\Debug\Random_File.exe
+F:\Đồ án\QLTinhCuocDT\Random_File\obj\Debug\Random_File.pdb

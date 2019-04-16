@@ -46,11 +46,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dvGiaCuoc = new System.Windows.Forms.DataGridView();
-            this.MaGiaCuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TGBD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TGKT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.giaCuocBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.tbxsearch = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -58,15 +53,20 @@
             this.tim = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.them = new System.Windows.Forms.Button();
+            this.MaGiaCuoc = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TGBD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TGKT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.giaCuocBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numGiaTien)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvGiaCuoc)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.giaCuocBindingSource)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.giaCuocBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // xoa
@@ -78,7 +78,7 @@
             this.xoa.Margin = new System.Windows.Forms.Padding(4);
             this.xoa.Name = "xoa";
             this.xoa.Size = new System.Drawing.Size(109, 33);
-            this.xoa.TabIndex = 7;
+            this.xoa.TabIndex = 6;
             this.xoa.Text = "Xóa";
             this.xoa.UseVisualStyleBackColor = false;
             this.xoa.Click += new System.EventHandler(this.xoa_Click);
@@ -114,7 +114,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox1.BackColor = System.Drawing.Color.PeachPuff;
             this.groupBox1.Controls.Add(this.numGiaTien);
             this.groupBox1.Controls.Add(this.dtpTGKT);
             this.groupBox1.Controls.Add(this.label3);
@@ -154,7 +154,7 @@
             this.numGiaTien.Name = "numGiaTien";
             this.numGiaTien.ReadOnly = true;
             this.numGiaTien.Size = new System.Drawing.Size(244, 22);
-            this.numGiaTien.TabIndex = 23;
+            this.numGiaTien.TabIndex = 2;
             this.numGiaTien.ThousandsSeparator = true;
             this.numGiaTien.Value = new decimal(new int[] {
             100,
@@ -170,7 +170,7 @@
             this.dtpTGKT.Name = "dtpTGKT";
             this.dtpTGKT.ShowUpDown = true;
             this.dtpTGKT.Size = new System.Drawing.Size(244, 22);
-            this.dtpTGKT.TabIndex = 22;
+            this.dtpTGKT.TabIndex = 3;
             // 
             // label3
             // 
@@ -190,7 +190,7 @@
             this.dtpTGBD.Name = "dtpTGBD";
             this.dtpTGBD.ShowUpDown = true;
             this.dtpTGBD.Size = new System.Drawing.Size(244, 22);
-            this.dtpTGBD.TabIndex = 20;
+            this.dtpTGBD.TabIndex = 1;
             // 
             // label6
             // 
@@ -204,6 +204,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.PeachPuff;
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -226,12 +227,15 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.DarkRed;
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.button1.Location = new System.Drawing.Point(12, 11);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(115, 23);
-            this.button1.TabIndex = 0;
+            this.button1.TabIndex = 10;
             this.button1.Text = "Trở về danh mục";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // sua
@@ -243,7 +247,7 @@
             this.sua.Margin = new System.Windows.Forms.Padding(4);
             this.sua.Name = "sua";
             this.sua.Size = new System.Drawing.Size(109, 33);
-            this.sua.TabIndex = 6;
+            this.sua.TabIndex = 5;
             this.sua.Text = "Cập nhật";
             this.sua.UseVisualStyleBackColor = false;
             this.sua.Click += new System.EventHandler(this.sua_Click);
@@ -263,7 +267,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox3.BackColor = System.Drawing.Color.PeachPuff;
             this.groupBox3.Controls.Add(this.dvGiaCuoc);
             this.groupBox3.Location = new System.Drawing.Point(400, 43);
             this.groupBox3.Name = "groupBox3";
@@ -291,6 +295,93 @@
             this.dvGiaCuoc.Size = new System.Drawing.Size(427, 170);
             this.dvGiaCuoc.TabIndex = 0;
             this.dvGiaCuoc.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvGiaCuoc_CellClick);
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.BackColor = System.Drawing.Color.PeachPuff;
+            this.groupBox4.Controls.Add(this.tbxsearch);
+            this.groupBox4.Controls.Add(this.label9);
+            this.groupBox4.Controls.Add(this.retype);
+            this.groupBox4.Controls.Add(this.tim);
+            this.groupBox4.Location = new System.Drawing.Point(0, 199);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(394, 106);
+            this.groupBox4.TabIndex = 7;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Tìm kiếm";
+            // 
+            // tbxsearch
+            // 
+            this.tbxsearch.Location = new System.Drawing.Point(131, 20);
+            this.tbxsearch.Margin = new System.Windows.Forms.Padding(4);
+            this.tbxsearch.Name = "tbxsearch";
+            this.tbxsearch.Size = new System.Drawing.Size(245, 20);
+            this.tbxsearch.TabIndex = 7;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(10, 23);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(77, 13);
+            this.label9.TabIndex = 12;
+            this.label9.Text = "Nhập giá cước";
+            // 
+            // retype
+            // 
+            this.retype.BackColor = System.Drawing.Color.Orange;
+            this.retype.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.retype.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.retype.Location = new System.Drawing.Point(267, 60);
+            this.retype.Margin = new System.Windows.Forms.Padding(4);
+            this.retype.Name = "retype";
+            this.retype.Size = new System.Drawing.Size(109, 33);
+            this.retype.TabIndex = 9;
+            this.retype.Text = "Làm mới";
+            this.retype.UseVisualStyleBackColor = false;
+            this.retype.Click += new System.EventHandler(this.retype_Click);
+            // 
+            // tim
+            // 
+            this.tim.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tim.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.tim.Location = new System.Drawing.Point(131, 60);
+            this.tim.Margin = new System.Windows.Forms.Padding(4);
+            this.tim.Name = "tim";
+            this.tim.Size = new System.Drawing.Size(109, 33);
+            this.tim.TabIndex = 8;
+            this.tim.Text = "Tìm kiếm";
+            this.tim.UseVisualStyleBackColor = false;
+            this.tim.Click += new System.EventHandler(this.tim_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.Color.PeachPuff;
+            this.groupBox2.Controls.Add(this.xoa);
+            this.groupBox2.Controls.Add(this.sua);
+            this.groupBox2.Controls.Add(this.them);
+            this.groupBox2.Location = new System.Drawing.Point(400, 235);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(433, 70);
+            this.groupBox2.TabIndex = 5;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Chức năng";
+            // 
+            // them
+            // 
+            this.them.BackColor = System.Drawing.Color.SpringGreen;
+            this.them.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.them.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.them.Location = new System.Drawing.Point(33, 24);
+            this.them.Margin = new System.Windows.Forms.Padding(4);
+            this.them.Name = "them";
+            this.them.Size = new System.Drawing.Size(109, 33);
+            this.them.TabIndex = 4;
+            this.them.Text = "Thêm";
+            this.them.UseVisualStyleBackColor = false;
+            this.them.Click += new System.EventHandler(this.them_Click);
             // 
             // MaGiaCuoc
             // 
@@ -326,97 +417,12 @@
             // 
             this.giaCuocBindingSource.DataSource = typeof(QLTinhCuocDT_App.Entity.GiaCuoc);
             // 
-            // groupBox4
-            // 
-            this.groupBox4.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.groupBox4.Controls.Add(this.tbxsearch);
-            this.groupBox4.Controls.Add(this.label9);
-            this.groupBox4.Controls.Add(this.retype);
-            this.groupBox4.Controls.Add(this.tim);
-            this.groupBox4.Location = new System.Drawing.Point(0, 199);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(394, 106);
-            this.groupBox4.TabIndex = 7;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Tìm kiếm";
-            // 
-            // tbxsearch
-            // 
-            this.tbxsearch.Location = new System.Drawing.Point(131, 20);
-            this.tbxsearch.Margin = new System.Windows.Forms.Padding(4);
-            this.tbxsearch.Name = "tbxsearch";
-            this.tbxsearch.Size = new System.Drawing.Size(245, 20);
-            this.tbxsearch.TabIndex = 13;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(10, 23);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(77, 13);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "Nhập giá cước";
-            // 
-            // retype
-            // 
-            this.retype.BackColor = System.Drawing.Color.Orange;
-            this.retype.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.retype.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.retype.Location = new System.Drawing.Point(267, 60);
-            this.retype.Margin = new System.Windows.Forms.Padding(4);
-            this.retype.Name = "retype";
-            this.retype.Size = new System.Drawing.Size(109, 33);
-            this.retype.TabIndex = 8;
-            this.retype.Text = "Làm mới";
-            this.retype.UseVisualStyleBackColor = false;
-            this.retype.Click += new System.EventHandler(this.retype_Click);
-            // 
-            // tim
-            // 
-            this.tim.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tim.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.tim.Location = new System.Drawing.Point(131, 60);
-            this.tim.Margin = new System.Windows.Forms.Padding(4);
-            this.tim.Name = "tim";
-            this.tim.Size = new System.Drawing.Size(109, 33);
-            this.tim.TabIndex = 9;
-            this.tim.Text = "Tìm kiếm";
-            this.tim.UseVisualStyleBackColor = false;
-            this.tim.Click += new System.EventHandler(this.tim_Click);
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.groupBox2.Controls.Add(this.xoa);
-            this.groupBox2.Controls.Add(this.sua);
-            this.groupBox2.Controls.Add(this.them);
-            this.groupBox2.Location = new System.Drawing.Point(400, 235);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(433, 70);
-            this.groupBox2.TabIndex = 5;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Chức năng";
-            // 
-            // them
-            // 
-            this.them.BackColor = System.Drawing.Color.SpringGreen;
-            this.them.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.them.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.them.Location = new System.Drawing.Point(33, 24);
-            this.them.Margin = new System.Windows.Forms.Padding(4);
-            this.them.Name = "them";
-            this.them.Size = new System.Drawing.Size(109, 33);
-            this.them.TabIndex = 5;
-            this.them.Text = "Thêm";
-            this.them.UseVisualStyleBackColor = false;
-            this.them.Click += new System.EventHandler(this.them_Click);
-            // 
             // GiaCuoc_UI
             // 
+            this.AcceptButton = this.them;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.button1;
             this.ClientSize = new System.Drawing.Size(836, 305);
             this.Controls.Add(this.panel1);
             this.Name = "GiaCuoc_UI";
@@ -431,10 +437,10 @@
             this.panel1.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dvGiaCuoc)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.giaCuocBindingSource)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.giaCuocBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

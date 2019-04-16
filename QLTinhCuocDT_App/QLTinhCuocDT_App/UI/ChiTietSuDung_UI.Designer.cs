@@ -50,6 +50,11 @@
             this.label9 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dvChiTietSD = new System.Windows.Forms.DataGridView();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.Import = new System.Windows.Forms.Button();
+            this.tim = new System.Windows.Forms.Button();
+            this.retype = new System.Windows.Forms.Button();
             this.MaChiTiet = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IDSIM = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TGBD = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,23 +62,19 @@
             this.SoPhutSD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PhiCuocGoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chiTietSuDungBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.Import = new System.Windows.Forms.Button();
-            this.tim = new System.Windows.Forms.Button();
-            this.retype = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvChiTietSD)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chiTietSuDungBindingSource)).BeginInit();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chiTietSuDungBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.PeachPuff;
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -96,17 +97,20 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.DarkRed;
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.button1.Location = new System.Drawing.Point(12, 11);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(115, 23);
-            this.button1.TabIndex = 0;
+            this.button1.TabIndex = 10;
             this.button1.Text = "Trở về danh mục";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox1.BackColor = System.Drawing.Color.PeachPuff;
             this.groupBox1.Controls.Add(this.tbxTGKT);
             this.groupBox1.Controls.Add(this.tbxTGBD);
             this.groupBox1.Controls.Add(this.tbxIDSIM);
@@ -135,7 +139,7 @@
             this.tbxTGKT.Name = "tbxTGKT";
             this.tbxTGKT.ReadOnly = true;
             this.tbxTGKT.Size = new System.Drawing.Size(213, 22);
-            this.tbxTGKT.TabIndex = 19;
+            this.tbxTGKT.TabIndex = 4;
             // 
             // tbxTGBD
             // 
@@ -145,7 +149,7 @@
             this.tbxTGBD.Name = "tbxTGBD";
             this.tbxTGBD.ReadOnly = true;
             this.tbxTGBD.Size = new System.Drawing.Size(213, 22);
-            this.tbxTGBD.TabIndex = 18;
+            this.tbxTGBD.TabIndex = 1;
             // 
             // tbxIDSIM
             // 
@@ -155,7 +159,7 @@
             this.tbxIDSIM.Name = "tbxIDSIM";
             this.tbxIDSIM.ReadOnly = true;
             this.tbxIDSIM.Size = new System.Drawing.Size(213, 22);
-            this.tbxIDSIM.TabIndex = 17;
+            this.tbxIDSIM.TabIndex = 3;
             // 
             // tbxPhiCuocGoi
             // 
@@ -165,7 +169,7 @@
             this.tbxPhiCuocGoi.Name = "tbxPhiCuocGoi";
             this.tbxPhiCuocGoi.ReadOnly = true;
             this.tbxPhiCuocGoi.Size = new System.Drawing.Size(213, 22);
-            this.tbxPhiCuocGoi.TabIndex = 13;
+            this.tbxPhiCuocGoi.TabIndex = 5;
             // 
             // label6
             // 
@@ -185,7 +189,7 @@
             this.tbxSoPhutSD.Name = "tbxSoPhutSD";
             this.tbxSoPhutSD.ReadOnly = true;
             this.tbxSoPhutSD.Size = new System.Drawing.Size(213, 22);
-            this.tbxSoPhutSD.TabIndex = 11;
+            this.tbxSoPhutSD.TabIndex = 2;
             // 
             // label5
             // 
@@ -248,7 +252,7 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox4.BackColor = System.Drawing.Color.PeachPuff;
             this.groupBox4.Controls.Add(this.tbxsearch);
             this.groupBox4.Controls.Add(this.label9);
             this.groupBox4.Location = new System.Drawing.Point(3, 251);
@@ -264,7 +268,7 @@
             this.tbxsearch.Margin = new System.Windows.Forms.Padding(4);
             this.tbxsearch.Name = "tbxsearch";
             this.tbxsearch.Size = new System.Drawing.Size(213, 20);
-            this.tbxsearch.TabIndex = 13;
+            this.tbxsearch.TabIndex = 6;
             // 
             // label9
             // 
@@ -278,7 +282,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox3.BackColor = System.Drawing.Color.PeachPuff;
             this.groupBox3.Controls.Add(this.dvChiTietSD);
             this.groupBox3.Location = new System.Drawing.Point(400, 42);
             this.groupBox3.Name = "groupBox3";
@@ -307,6 +311,74 @@
             this.dvChiTietSD.Size = new System.Drawing.Size(430, 243);
             this.dvChiTietSD.TabIndex = 0;
             this.dvChiTietSD.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvChiTietSD_CellClick);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.groupBox3);
+            this.panel1.Controls.Add(this.groupBox4);
+            this.panel1.Controls.Add(this.groupBox2);
+            this.panel1.Controls.Add(this.groupBox1);
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(836, 361);
+            this.panel1.TabIndex = 1;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.BackColor = System.Drawing.Color.PeachPuff;
+            this.groupBox2.Controls.Add(this.Import);
+            this.groupBox2.Controls.Add(this.tim);
+            this.groupBox2.Controls.Add(this.retype);
+            this.groupBox2.Location = new System.Drawing.Point(6, 307);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(827, 49);
+            this.groupBox2.TabIndex = 5;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Chức năng";
+            // 
+            // Import
+            // 
+            this.Import.BackColor = System.Drawing.Color.Tan;
+            this.Import.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Import.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.Import.Location = new System.Drawing.Point(589, 9);
+            this.Import.Margin = new System.Windows.Forms.Padding(4);
+            this.Import.Name = "Import";
+            this.Import.Size = new System.Drawing.Size(110, 33);
+            this.Import.TabIndex = 9;
+            this.Import.Text = "Nhập file Log";
+            this.Import.UseVisualStyleBackColor = false;
+            this.Import.Click += new System.EventHandler(this.Import_Click);
+            // 
+            // tim
+            // 
+            this.tim.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.tim.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.tim.Location = new System.Drawing.Point(124, 9);
+            this.tim.Margin = new System.Windows.Forms.Padding(4);
+            this.tim.Name = "tim";
+            this.tim.Size = new System.Drawing.Size(86, 33);
+            this.tim.TabIndex = 7;
+            this.tim.Text = "Tìm kiếm";
+            this.tim.UseVisualStyleBackColor = false;
+            this.tim.Click += new System.EventHandler(this.tim_Click);
+            // 
+            // retype
+            // 
+            this.retype.BackColor = System.Drawing.Color.Orange;
+            this.retype.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.retype.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.retype.Location = new System.Drawing.Point(251, 9);
+            this.retype.Margin = new System.Windows.Forms.Padding(4);
+            this.retype.Name = "retype";
+            this.retype.Size = new System.Drawing.Size(86, 33);
+            this.retype.TabIndex = 8;
+            this.retype.Text = "Làm mới";
+            this.retype.UseVisualStyleBackColor = false;
+            this.retype.Click += new System.EventHandler(this.retype_Click);
             // 
             // MaChiTiet
             // 
@@ -356,78 +428,11 @@
             // 
             this.chiTietSuDungBindingSource.DataSource = typeof(QLTinhCuocDT_App.Entity.ChiTietSuDung);
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.groupBox3);
-            this.panel1.Controls.Add(this.groupBox4);
-            this.panel1.Controls.Add(this.groupBox2);
-            this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Controls.Add(this.panel2);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(836, 361);
-            this.panel1.TabIndex = 1;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.groupBox2.Controls.Add(this.Import);
-            this.groupBox2.Controls.Add(this.tim);
-            this.groupBox2.Controls.Add(this.retype);
-            this.groupBox2.Location = new System.Drawing.Point(6, 307);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(827, 49);
-            this.groupBox2.TabIndex = 5;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Chức năng";
-            // 
-            // Import
-            // 
-            this.Import.BackColor = System.Drawing.Color.Tan;
-            this.Import.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Import.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.Import.Location = new System.Drawing.Point(589, 9);
-            this.Import.Margin = new System.Windows.Forms.Padding(4);
-            this.Import.Name = "Import";
-            this.Import.Size = new System.Drawing.Size(110, 33);
-            this.Import.TabIndex = 8;
-            this.Import.Text = "Nhập file Log";
-            this.Import.UseVisualStyleBackColor = false;
-            this.Import.Click += new System.EventHandler(this.Import_Click);
-            // 
-            // tim
-            // 
-            this.tim.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tim.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.tim.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.tim.Location = new System.Drawing.Point(124, 9);
-            this.tim.Margin = new System.Windows.Forms.Padding(4);
-            this.tim.Name = "tim";
-            this.tim.Size = new System.Drawing.Size(86, 33);
-            this.tim.TabIndex = 9;
-            this.tim.Text = "Tìm kiếm";
-            this.tim.UseVisualStyleBackColor = false;
-            this.tim.Click += new System.EventHandler(this.tim_Click);
-            // 
-            // retype
-            // 
-            this.retype.BackColor = System.Drawing.Color.Orange;
-            this.retype.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.retype.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.retype.Location = new System.Drawing.Point(251, 9);
-            this.retype.Margin = new System.Windows.Forms.Padding(4);
-            this.retype.Name = "retype";
-            this.retype.Size = new System.Drawing.Size(86, 33);
-            this.retype.TabIndex = 8;
-            this.retype.Text = "Làm mới";
-            this.retype.UseVisualStyleBackColor = false;
-            this.retype.Click += new System.EventHandler(this.retype_Click);
-            // 
             // ChiTietSuDung_UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.button1;
             this.ClientSize = new System.Drawing.Size(836, 361);
             this.Controls.Add(this.panel1);
             this.Name = "ChiTietSuDung_UI";
@@ -442,9 +447,9 @@
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dvChiTietSD)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.chiTietSuDungBindingSource)).EndInit();
             this.panel1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.chiTietSuDungBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

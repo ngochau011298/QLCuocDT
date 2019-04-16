@@ -43,7 +43,10 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.panel5 = new System.Windows.Forms.Panel();
             this.dvHoaDonChuaThanhToan = new System.Windows.Forms.DataGridView();
+            this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HanChotThanhToan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.cut = new System.Windows.Forms.Button();
             this.retype = new System.Windows.Forms.Button();
             this.details = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -59,21 +62,18 @@
             this.cbxIDSIM = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tabPage_Cut = new System.Windows.Forms.TabPage();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.dvHoaDonCut = new System.Windows.Forms.DataGridView();
             this.panel6 = new System.Windows.Forms.Panel();
             this.load = new System.Windows.Forms.Button();
             this.restore = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.dvHoaDonCut = new System.Windows.Forms.DataGridView();
+            this.HanChot = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dvCutSIM = new System.Windows.Forms.DataGridView();
             this.TenKHCUT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayDangKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayHetHan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Pay = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.HanChot = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HanChotThanhToan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cut = new System.Windows.Forms.Button();
             this.MaHDTC = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.IDSIM = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TongTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -114,10 +114,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dvChiTietSD)).BeginInit();
             this.panel4.SuspendLayout();
             this.tabPage_Cut.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvHoaDonCut)).BeginInit();
-            this.panel6.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvCutSIM)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonTinhCuocBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chiTietSuDungBindingSource)).BeginInit();
@@ -126,8 +126,10 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.PeachPuff;
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Font = new System.Drawing.Font("iCielBC Cubano Normal", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(873, 42);
@@ -137,10 +139,11 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(212, 9);
+            this.label1.Font = new System.Drawing.Font("iCielBC Cubano Normal", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.DarkRed;
+            this.label1.Location = new System.Drawing.Point(240, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(507, 25);
+            this.label1.Size = new System.Drawing.Size(413, 25);
             this.label1.TabIndex = 0;
             this.label1.Text = "PHẦN MỀM QUẢN LÝ TÍNH CƯỚC ĐIỆN THOẠI";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -152,7 +155,7 @@
             this.tabControl1.Controls.Add(this.tabPage_CTSD);
             this.tabControl1.Controls.Add(this.tabPage_Cut);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl1.Location = new System.Drawing.Point(0, 42);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -162,16 +165,17 @@
             // tab_quanly
             // 
             this.tab_quanly.Controls.Add(this.panel_menu);
-            this.tab_quanly.Location = new System.Drawing.Point(4, 34);
+            this.tab_quanly.Location = new System.Drawing.Point(4, 25);
             this.tab_quanly.Name = "tab_quanly";
             this.tab_quanly.Padding = new System.Windows.Forms.Padding(3);
-            this.tab_quanly.Size = new System.Drawing.Size(865, 444);
+            this.tab_quanly.Size = new System.Drawing.Size(865, 453);
             this.tab_quanly.TabIndex = 0;
             this.tab_quanly.Text = "Quản lý";
             this.tab_quanly.UseVisualStyleBackColor = true;
             // 
             // panel_menu
             // 
+            this.panel_menu.BackColor = System.Drawing.Color.PeachPuff;
             this.panel_menu.Controls.Add(this.btnKhachHang);
             this.panel_menu.Controls.Add(this.btnGiaCuoc);
             this.panel_menu.Controls.Add(this.btnThongTinSIM);
@@ -181,15 +185,16 @@
             this.panel_menu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel_menu.Location = new System.Drawing.Point(3, 3);
             this.panel_menu.Name = "panel_menu";
-            this.panel_menu.Size = new System.Drawing.Size(859, 438);
+            this.panel_menu.Size = new System.Drawing.Size(859, 447);
             this.panel_menu.TabIndex = 7;
             // 
             // btnKhachHang
             // 
-            this.btnKhachHang.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.btnKhachHang.BackColor = System.Drawing.Color.DarkOrange;
             this.btnKhachHang.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnKhachHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKhachHang.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKhachHang.Font = new System.Drawing.Font("iCielBC Cubano Normal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKhachHang.ForeColor = System.Drawing.Color.Azure;
             this.btnKhachHang.Location = new System.Drawing.Point(63, 73);
             this.btnKhachHang.Name = "btnKhachHang";
             this.btnKhachHang.Size = new System.Drawing.Size(196, 102);
@@ -201,14 +206,15 @@
             // 
             // btnGiaCuoc
             // 
-            this.btnGiaCuoc.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.btnGiaCuoc.BackColor = System.Drawing.Color.DarkOrange;
             this.btnGiaCuoc.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnGiaCuoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGiaCuoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGiaCuoc.Font = new System.Drawing.Font("iCielBC Cubano Normal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGiaCuoc.ForeColor = System.Drawing.Color.Azure;
             this.btnGiaCuoc.Location = new System.Drawing.Point(63, 280);
             this.btnGiaCuoc.Name = "btnGiaCuoc";
             this.btnGiaCuoc.Size = new System.Drawing.Size(196, 102);
-            this.btnGiaCuoc.TabIndex = 6;
+            this.btnGiaCuoc.TabIndex = 4;
             this.btnGiaCuoc.Text = "Giá cước";
             this.btnGiaCuoc.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnGiaCuoc.UseVisualStyleBackColor = false;
@@ -216,10 +222,11 @@
             // 
             // btnThongTinSIM
             // 
-            this.btnThongTinSIM.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.btnThongTinSIM.BackColor = System.Drawing.Color.DarkOrange;
             this.btnThongTinSIM.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnThongTinSIM.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThongTinSIM.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThongTinSIM.Font = new System.Drawing.Font("iCielBC Cubano Normal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThongTinSIM.ForeColor = System.Drawing.Color.Azure;
             this.btnThongTinSIM.Location = new System.Drawing.Point(341, 73);
             this.btnThongTinSIM.Name = "btnThongTinSIM";
             this.btnThongTinSIM.Size = new System.Drawing.Size(196, 102);
@@ -231,14 +238,15 @@
             // 
             // btnCTSD
             // 
-            this.btnCTSD.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.btnCTSD.BackColor = System.Drawing.Color.DarkOrange;
             this.btnCTSD.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnCTSD.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCTSD.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCTSD.Font = new System.Drawing.Font("iCielBC Cubano Normal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCTSD.ForeColor = System.Drawing.Color.Azure;
             this.btnCTSD.Location = new System.Drawing.Point(606, 280);
             this.btnCTSD.Name = "btnCTSD";
             this.btnCTSD.Size = new System.Drawing.Size(196, 102);
-            this.btnCTSD.TabIndex = 5;
+            this.btnCTSD.TabIndex = 6;
             this.btnCTSD.Text = "Chi tiết sử dụng";
             this.btnCTSD.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnCTSD.UseVisualStyleBackColor = false;
@@ -246,14 +254,15 @@
             // 
             // btnHDDK
             // 
-            this.btnHDDK.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.btnHDDK.BackColor = System.Drawing.Color.DarkOrange;
             this.btnHDDK.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnHDDK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHDDK.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHDDK.Font = new System.Drawing.Font("iCielBC Cubano Normal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHDDK.ForeColor = System.Drawing.Color.Azure;
             this.btnHDDK.Location = new System.Drawing.Point(341, 280);
             this.btnHDDK.Name = "btnHDDK";
             this.btnHDDK.Size = new System.Drawing.Size(196, 102);
-            this.btnHDDK.TabIndex = 3;
+            this.btnHDDK.TabIndex = 5;
             this.btnHDDK.Text = "Hóa đơn đăng ký";
             this.btnHDDK.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHDDK.UseVisualStyleBackColor = false;
@@ -261,14 +270,15 @@
             // 
             // btnHDTC
             // 
-            this.btnHDTC.BackColor = System.Drawing.Color.MediumAquamarine;
+            this.btnHDTC.BackColor = System.Drawing.Color.DarkOrange;
             this.btnHDTC.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnHDTC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHDTC.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHDTC.Font = new System.Drawing.Font("iCielBC Cubano Normal", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHDTC.ForeColor = System.Drawing.Color.Azure;
             this.btnHDTC.Location = new System.Drawing.Point(606, 73);
             this.btnHDTC.Name = "btnHDTC";
             this.btnHDTC.Size = new System.Drawing.Size(196, 102);
-            this.btnHDTC.TabIndex = 4;
+            this.btnHDTC.TabIndex = 3;
             this.btnHDTC.Text = "Hóa đơn tính cước";
             this.btnHDTC.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHDTC.UseVisualStyleBackColor = false;
@@ -279,10 +289,10 @@
             this.tabPage2.Controls.Add(this.panel5);
             this.tabPage2.Controls.Add(this.panel3);
             this.tabPage2.Controls.Add(this.panel2);
-            this.tabPage2.Location = new System.Drawing.Point(4, 34);
+            this.tabPage2.Location = new System.Drawing.Point(4, 25);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(865, 444);
+            this.tabPage2.Size = new System.Drawing.Size(865, 453);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Kiểm tra thanh toán";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -294,7 +304,7 @@
             this.panel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel5.Location = new System.Drawing.Point(3, 55);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(859, 331);
+            this.panel5.Size = new System.Drawing.Size(859, 340);
             this.panel5.TabIndex = 2;
             // 
             // dvHoaDonChuaThanhToan
@@ -316,20 +326,49 @@
             this.dvHoaDonChuaThanhToan.Location = new System.Drawing.Point(0, 0);
             this.dvHoaDonChuaThanhToan.Name = "dvHoaDonChuaThanhToan";
             this.dvHoaDonChuaThanhToan.ReadOnly = true;
-            this.dvHoaDonChuaThanhToan.Size = new System.Drawing.Size(859, 331);
+            this.dvHoaDonChuaThanhToan.Size = new System.Drawing.Size(859, 340);
             this.dvHoaDonChuaThanhToan.TabIndex = 0;
             this.dvHoaDonChuaThanhToan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvHoaDonChuaThanhToan_CellClick);
             // 
+            // TenKH
+            // 
+            this.TenKH.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TenKH.HeaderText = "Tên khách hàng";
+            this.TenKH.Name = "TenKH";
+            this.TenKH.ReadOnly = true;
+            // 
+            // HanChotThanhToan
+            // 
+            this.HanChotThanhToan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.HanChotThanhToan.HeaderText = "Hạn chót thanh toán";
+            this.HanChotThanhToan.Name = "HanChotThanhToan";
+            this.HanChotThanhToan.ReadOnly = true;
+            // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.PeachPuff;
             this.panel3.Controls.Add(this.cut);
             this.panel3.Controls.Add(this.retype);
             this.panel3.Controls.Add(this.details);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(3, 386);
+            this.panel3.Location = new System.Drawing.Point(3, 395);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(859, 55);
             this.panel3.TabIndex = 1;
+            // 
+            // cut
+            // 
+            this.cut.BackColor = System.Drawing.Color.Salmon;
+            this.cut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cut.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.cut.Location = new System.Drawing.Point(744, 16);
+            this.cut.Margin = new System.Windows.Forms.Padding(4);
+            this.cut.Name = "cut";
+            this.cut.Size = new System.Drawing.Size(109, 33);
+            this.cut.TabIndex = 10;
+            this.cut.Text = "Cắt dịch vụ";
+            this.cut.UseVisualStyleBackColor = false;
+            this.cut.Click += new System.EventHandler(this.cut_Click);
             // 
             // retype
             // 
@@ -361,6 +400,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.PeachPuff;
             this.panel2.Controls.Add(this.label8);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(3, 3);
@@ -372,10 +412,11 @@
             // 
             this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("iCielBC Cubano Normal", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.DarkRed;
             this.label8.Location = new System.Drawing.Point(285, 16);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(339, 25);
+            this.label8.Size = new System.Drawing.Size(271, 25);
             this.label8.TabIndex = 2;
             this.label8.Text = "HÓA ĐƠN CHƯA THANH TOÁN";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -385,10 +426,10 @@
             this.tabPage_CTSD.Controls.Add(this.groupBox2);
             this.tabPage_CTSD.Controls.Add(this.groupBox1);
             this.tabPage_CTSD.Controls.Add(this.panel4);
-            this.tabPage_CTSD.Location = new System.Drawing.Point(4, 34);
+            this.tabPage_CTSD.Location = new System.Drawing.Point(4, 25);
             this.tabPage_CTSD.Name = "tabPage_CTSD";
             this.tabPage_CTSD.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_CTSD.Size = new System.Drawing.Size(865, 444);
+            this.tabPage_CTSD.Size = new System.Drawing.Size(865, 453);
             this.tabPage_CTSD.TabIndex = 2;
             this.tabPage_CTSD.Text = "Chi tiết sử dụng dịch vụ";
             this.tabPage_CTSD.UseVisualStyleBackColor = true;
@@ -396,12 +437,13 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.PeachPuff;
             this.groupBox2.Controls.Add(this.dvHoaDonTinhCuoc);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(3, 284);
+            this.groupBox2.Location = new System.Drawing.Point(3, 277);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(859, 157);
+            this.groupBox2.Size = new System.Drawing.Size(859, 173);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Hóa đơn tính cước";
@@ -423,17 +465,18 @@
             this.dvHoaDonTinhCuoc.Location = new System.Drawing.Point(3, 18);
             this.dvHoaDonTinhCuoc.Name = "dvHoaDonTinhCuoc";
             this.dvHoaDonTinhCuoc.ReadOnly = true;
-            this.dvHoaDonTinhCuoc.Size = new System.Drawing.Size(853, 136);
+            this.dvHoaDonTinhCuoc.Size = new System.Drawing.Size(853, 152);
             this.dvHoaDonTinhCuoc.TabIndex = 1;
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.PeachPuff;
             this.groupBox1.Controls.Add(this.dvChiTietSD);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(3, 63);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(859, 378);
+            this.groupBox1.Size = new System.Drawing.Size(859, 387);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Chi tiết sử dụng";
@@ -460,6 +503,7 @@
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.PeachPuff;
             this.panel4.Controls.Add(this.tbxTenKH);
             this.panel4.Controls.Add(this.label3);
             this.panel4.Controls.Add(this.cbxIDSIM);
@@ -519,32 +563,60 @@
             this.tabPage_Cut.Controls.Add(this.panel6);
             this.tabPage_Cut.Controls.Add(this.groupBox4);
             this.tabPage_Cut.Controls.Add(this.groupBox3);
-            this.tabPage_Cut.Location = new System.Drawing.Point(4, 34);
+            this.tabPage_Cut.Location = new System.Drawing.Point(4, 25);
             this.tabPage_Cut.Name = "tabPage_Cut";
             this.tabPage_Cut.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage_Cut.Size = new System.Drawing.Size(865, 444);
+            this.tabPage_Cut.Size = new System.Drawing.Size(865, 453);
             this.tabPage_Cut.TabIndex = 3;
             this.tabPage_Cut.Text = "SIM bị cắt dịch vụ";
             this.tabPage_Cut.UseVisualStyleBackColor = true;
             // 
-            // groupBox3
+            // panel6
             // 
-            this.groupBox3.Controls.Add(this.dvCutSIM);
-            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(3, 3);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(859, 438);
-            this.groupBox3.TabIndex = 2;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Danh sách SIM bị cắt";
+            this.panel6.BackColor = System.Drawing.Color.PeachPuff;
+            this.panel6.Controls.Add(this.load);
+            this.panel6.Controls.Add(this.restore);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel6.Location = new System.Drawing.Point(3, 238);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(859, 55);
+            this.panel6.TabIndex = 5;
+            // 
+            // load
+            // 
+            this.load.BackColor = System.Drawing.Color.Orange;
+            this.load.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.load.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.load.Location = new System.Drawing.Point(255, 10);
+            this.load.Margin = new System.Windows.Forms.Padding(4);
+            this.load.Name = "load";
+            this.load.Size = new System.Drawing.Size(128, 33);
+            this.load.TabIndex = 9;
+            this.load.Text = "Tải danh sách";
+            this.load.UseVisualStyleBackColor = false;
+            this.load.Click += new System.EventHandler(this.load_Click);
+            // 
+            // restore
+            // 
+            this.restore.BackColor = System.Drawing.Color.SpringGreen;
+            this.restore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.restore.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.restore.Location = new System.Drawing.Point(480, 10);
+            this.restore.Margin = new System.Windows.Forms.Padding(4);
+            this.restore.Name = "restore";
+            this.restore.Size = new System.Drawing.Size(157, 33);
+            this.restore.TabIndex = 7;
+            this.restore.Text = "Khôi phục dịch vụ";
+            this.restore.UseVisualStyleBackColor = false;
+            this.restore.Click += new System.EventHandler(this.restore_Click);
             // 
             // groupBox4
             // 
+            this.groupBox4.BackColor = System.Drawing.Color.PeachPuff;
             this.groupBox4.Controls.Add(this.dvHoaDonCut);
             this.groupBox4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(3, 284);
+            this.groupBox4.Location = new System.Drawing.Point(3, 293);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(859, 157);
             this.groupBox4.TabIndex = 4;
@@ -572,43 +644,25 @@
             this.dvHoaDonCut.Size = new System.Drawing.Size(853, 136);
             this.dvHoaDonCut.TabIndex = 1;
             // 
-            // panel6
+            // HanChot
             // 
-            this.panel6.Controls.Add(this.load);
-            this.panel6.Controls.Add(this.restore);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel6.Location = new System.Drawing.Point(3, 229);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(859, 55);
-            this.panel6.TabIndex = 5;
+            this.HanChot.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.HanChot.HeaderText = "Hạn chót thanh toán";
+            this.HanChot.Name = "HanChot";
+            this.HanChot.ReadOnly = true;
             // 
-            // load
+            // groupBox3
             // 
-            this.load.BackColor = System.Drawing.Color.Orange;
-            this.load.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.load.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.load.Location = new System.Drawing.Point(268, 16);
-            this.load.Margin = new System.Windows.Forms.Padding(4);
-            this.load.Name = "load";
-            this.load.Size = new System.Drawing.Size(128, 33);
-            this.load.TabIndex = 9;
-            this.load.Text = "Tải danh sách";
-            this.load.UseVisualStyleBackColor = false;
-            this.load.Click += new System.EventHandler(this.load_Click);
-            // 
-            // restore
-            // 
-            this.restore.BackColor = System.Drawing.Color.SpringGreen;
-            this.restore.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.restore.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.restore.Location = new System.Drawing.Point(493, 16);
-            this.restore.Margin = new System.Windows.Forms.Padding(4);
-            this.restore.Name = "restore";
-            this.restore.Size = new System.Drawing.Size(157, 33);
-            this.restore.TabIndex = 7;
-            this.restore.Text = "Khôi phục dịch vụ";
-            this.restore.UseVisualStyleBackColor = false;
-            this.restore.Click += new System.EventHandler(this.restore_Click);
+            this.groupBox3.BackColor = System.Drawing.Color.PeachPuff;
+            this.groupBox3.Controls.Add(this.dvCutSIM);
+            this.groupBox3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(3, 3);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(859, 447);
+            this.groupBox3.TabIndex = 2;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Danh sách SIM bị cắt";
             // 
             // dvCutSIM
             // 
@@ -662,41 +716,6 @@
             this.Pay.ReadOnly = true;
             this.Pay.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Pay.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // HanChot
-            // 
-            this.HanChot.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.HanChot.HeaderText = "Hạn chót thanh toán";
-            this.HanChot.Name = "HanChot";
-            this.HanChot.ReadOnly = true;
-            // 
-            // TenKH
-            // 
-            this.TenKH.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TenKH.HeaderText = "Tên khách hàng";
-            this.TenKH.Name = "TenKH";
-            this.TenKH.ReadOnly = true;
-            // 
-            // HanChotThanhToan
-            // 
-            this.HanChotThanhToan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.HanChotThanhToan.HeaderText = "Hạn chót thanh toán";
-            this.HanChotThanhToan.Name = "HanChotThanhToan";
-            this.HanChotThanhToan.ReadOnly = true;
-            // 
-            // cut
-            // 
-            this.cut.BackColor = System.Drawing.Color.Salmon;
-            this.cut.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cut.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.cut.Location = new System.Drawing.Point(744, 16);
-            this.cut.Margin = new System.Windows.Forms.Padding(4);
-            this.cut.Name = "cut";
-            this.cut.Size = new System.Drawing.Size(109, 33);
-            this.cut.TabIndex = 10;
-            this.cut.Text = "Cắt dịch vụ";
-            this.cut.UseVisualStyleBackColor = false;
-            this.cut.Click += new System.EventHandler(this.cut_Click);
             // 
             // MaHDTC
             // 
@@ -897,10 +916,10 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.tabPage_Cut.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dvHoaDonCut)).EndInit();
-            this.panel6.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dvCutSIM)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonTinhCuocBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chiTietSuDungBindingSource)).EndInit();

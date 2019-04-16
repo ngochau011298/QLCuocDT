@@ -32,16 +32,12 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.dvHoaDonDK = new System.Windows.Forms.DataGridView();
-            this.MaHDDK = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IDSIM = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ChiPhiDangKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hoaDonDangKyBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.tbxsearch = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.retype = new System.Windows.Forms.Button();
             this.tim = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.xoa = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -56,14 +52,18 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.MaHDDK = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IDSIM = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ChiPhiDangKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hoaDonDangKyBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvHoaDonDK)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hoaDonDangKyBindingSource)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hoaDonDangKyBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -81,7 +81,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox3.BackColor = System.Drawing.Color.PeachPuff;
             this.groupBox3.Controls.Add(this.dvHoaDonDK);
             this.groupBox3.Location = new System.Drawing.Point(400, 42);
             this.groupBox3.Name = "groupBox3";
@@ -110,13 +110,6 @@
             this.dvHoaDonDK.TabIndex = 0;
             this.dvHoaDonDK.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvHoaDonDK_CellClick);
             // 
-            // MaHDDK
-            // 
-            this.MaHDDK.DataPropertyName = "MaHDDK";
-            this.MaHDDK.HeaderText = "Mã hóa đơn đăng ký";
-            this.MaHDDK.Name = "MaHDDK";
-            this.MaHDDK.ReadOnly = true;
-            // 
             // TenKH
             // 
             this.TenKH.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -124,28 +117,9 @@
             this.TenKH.Name = "TenKH";
             this.TenKH.ReadOnly = true;
             // 
-            // IDSIM
-            // 
-            this.IDSIM.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.IDSIM.DataPropertyName = "IDSIM";
-            this.IDSIM.HeaderText = "IDSIM";
-            this.IDSIM.Name = "IDSIM";
-            this.IDSIM.ReadOnly = true;
-            // 
-            // ChiPhiDangKy
-            // 
-            this.ChiPhiDangKy.DataPropertyName = "ChiPhiDangKy";
-            this.ChiPhiDangKy.HeaderText = "Chi phí đăng ký";
-            this.ChiPhiDangKy.Name = "ChiPhiDangKy";
-            this.ChiPhiDangKy.ReadOnly = true;
-            // 
-            // hoaDonDangKyBindingSource
-            // 
-            this.hoaDonDangKyBindingSource.DataSource = typeof(QLTinhCuocDT_App.Entity.HoaDonDangKy);
-            // 
             // groupBox4
             // 
-            this.groupBox4.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox4.BackColor = System.Drawing.Color.PeachPuff;
             this.groupBox4.Controls.Add(this.tbxsearch);
             this.groupBox4.Controls.Add(this.retype);
             this.groupBox4.Controls.Add(this.tim);
@@ -163,17 +137,7 @@
             this.tbxsearch.Margin = new System.Windows.Forms.Padding(4);
             this.tbxsearch.Name = "tbxsearch";
             this.tbxsearch.Size = new System.Drawing.Size(234, 20);
-            this.tbxsearch.TabIndex = 13;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(9, 23);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(77, 13);
-            this.label9.TabIndex = 12;
-            this.label9.Text = "Nhập thông tin";
+            this.tbxsearch.TabIndex = 4;
             // 
             // retype
             // 
@@ -184,7 +148,7 @@
             this.retype.Margin = new System.Windows.Forms.Padding(4);
             this.retype.Name = "retype";
             this.retype.Size = new System.Drawing.Size(109, 33);
-            this.retype.TabIndex = 8;
+            this.retype.TabIndex = 6;
             this.retype.Text = "Làm mới";
             this.retype.UseVisualStyleBackColor = false;
             this.retype.Click += new System.EventHandler(this.retype_Click);
@@ -198,14 +162,24 @@
             this.tim.Margin = new System.Windows.Forms.Padding(4);
             this.tim.Name = "tim";
             this.tim.Size = new System.Drawing.Size(109, 33);
-            this.tim.TabIndex = 9;
+            this.tim.TabIndex = 5;
             this.tim.Text = "Tìm kiếm";
             this.tim.UseVisualStyleBackColor = false;
             this.tim.Click += new System.EventHandler(this.tim_Click);
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(9, 23);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(77, 13);
+            this.label9.TabIndex = 12;
+            this.label9.Text = "Nhập thông tin";
+            // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.groupBox2.BackColor = System.Drawing.Color.PeachPuff;
             this.groupBox2.Controls.Add(this.xoa);
             this.groupBox2.Location = new System.Drawing.Point(400, 282);
             this.groupBox2.Name = "groupBox2";
@@ -223,14 +197,14 @@
             this.xoa.Margin = new System.Windows.Forms.Padding(4);
             this.xoa.Name = "xoa";
             this.xoa.Size = new System.Drawing.Size(116, 33);
-            this.xoa.TabIndex = 8;
+            this.xoa.TabIndex = 7;
             this.xoa.Text = "Xóa";
             this.xoa.UseVisualStyleBackColor = false;
             this.xoa.Click += new System.EventHandler(this.xoa_Click);
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox1.BackColor = System.Drawing.Color.PeachPuff;
             this.groupBox1.Controls.Add(this.tbxChiPhiDK);
             this.groupBox1.Controls.Add(this.tbxTenKH);
             this.groupBox1.Controls.Add(this.tbxIDSIM);
@@ -255,7 +229,7 @@
             this.tbxChiPhiDK.Name = "tbxChiPhiDK";
             this.tbxChiPhiDK.ReadOnly = true;
             this.tbxChiPhiDK.Size = new System.Drawing.Size(234, 22);
-            this.tbxChiPhiDK.TabIndex = 19;
+            this.tbxChiPhiDK.TabIndex = 3;
             // 
             // tbxTenKH
             // 
@@ -265,7 +239,7 @@
             this.tbxTenKH.Name = "tbxTenKH";
             this.tbxTenKH.ReadOnly = true;
             this.tbxTenKH.Size = new System.Drawing.Size(234, 22);
-            this.tbxTenKH.TabIndex = 18;
+            this.tbxTenKH.TabIndex = 1;
             // 
             // tbxIDSIM
             // 
@@ -275,7 +249,7 @@
             this.tbxIDSIM.Name = "tbxIDSIM";
             this.tbxIDSIM.ReadOnly = true;
             this.tbxIDSIM.Size = new System.Drawing.Size(234, 22);
-            this.tbxIDSIM.TabIndex = 17;
+            this.tbxIDSIM.TabIndex = 2;
             // 
             // label4
             // 
@@ -328,6 +302,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.PeachPuff;
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -350,18 +325,48 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.DarkRed;
+            this.button1.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.button1.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.button1.Location = new System.Drawing.Point(12, 11);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(115, 23);
-            this.button1.TabIndex = 0;
+            this.button1.TabIndex = 8;
             this.button1.Text = "Trở về danh mục";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // MaHDDK
+            // 
+            this.MaHDDK.DataPropertyName = "MaHDDK";
+            this.MaHDDK.HeaderText = "Mã hóa đơn đăng ký";
+            this.MaHDDK.Name = "MaHDDK";
+            this.MaHDDK.ReadOnly = true;
+            // 
+            // IDSIM
+            // 
+            this.IDSIM.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.IDSIM.DataPropertyName = "IDSIM";
+            this.IDSIM.HeaderText = "IDSIM";
+            this.IDSIM.Name = "IDSIM";
+            this.IDSIM.ReadOnly = true;
+            // 
+            // ChiPhiDangKy
+            // 
+            this.ChiPhiDangKy.DataPropertyName = "ChiPhiDangKy";
+            this.ChiPhiDangKy.HeaderText = "Chi phí đăng ký";
+            this.ChiPhiDangKy.Name = "ChiPhiDangKy";
+            this.ChiPhiDangKy.ReadOnly = true;
+            // 
+            // hoaDonDangKyBindingSource
+            // 
+            this.hoaDonDangKyBindingSource.DataSource = typeof(QLTinhCuocDT_App.Entity.HoaDonDangKy);
             // 
             // HoaDonDangKy_UI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.button1;
             this.ClientSize = new System.Drawing.Size(836, 353);
             this.Controls.Add(this.panel1);
             this.Name = "HoaDonDangKy_UI";
@@ -371,7 +376,6 @@
             this.panel1.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dvHoaDonDK)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hoaDonDangKyBindingSource)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -379,6 +383,7 @@
             this.groupBox1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hoaDonDangKyBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }

@@ -65,6 +65,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.PeachPuff;
             this.panel1.Controls.Add(this.label8);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -86,7 +87,7 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox1.BackColor = System.Drawing.Color.PeachPuff;
             this.groupBox1.Controls.Add(this.panel3);
             this.groupBox1.Controls.Add(this.panel2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -135,6 +136,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.PeachPuff;
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.tbxIDSIM);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -161,12 +163,12 @@
             this.tbxIDSIM.Name = "tbxIDSIM";
             this.tbxIDSIM.ReadOnly = true;
             this.tbxIDSIM.Size = new System.Drawing.Size(234, 22);
-            this.tbxIDSIM.TabIndex = 19;
+            this.tbxIDSIM.TabIndex = 4;
             this.tbxIDSIM.TextChanged += new System.EventHandler(this.tbxIDSIM_TextChanged);
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox2.BackColor = System.Drawing.Color.PeachPuff;
             this.groupBox2.Controls.Add(this.numPhiThueBao);
             this.groupBox2.Controls.Add(this.dtpNgayLapHD);
             this.groupBox2.Controls.Add(this.tbxTongTien);
@@ -203,7 +205,7 @@
             this.numPhiThueBao.Name = "numPhiThueBao";
             this.numPhiThueBao.ReadOnly = true;
             this.numPhiThueBao.Size = new System.Drawing.Size(234, 22);
-            this.numPhiThueBao.TabIndex = 24;
+            this.numPhiThueBao.TabIndex = 2;
             this.numPhiThueBao.ThousandsSeparator = true;
             this.numPhiThueBao.Value = new decimal(new int[] {
             50000,
@@ -218,18 +220,19 @@
             this.dtpNgayLapHD.Location = new System.Drawing.Point(134, 34);
             this.dtpNgayLapHD.Name = "dtpNgayLapHD";
             this.dtpNgayLapHD.Size = new System.Drawing.Size(234, 22);
-            this.dtpNgayLapHD.TabIndex = 18;
+            this.dtpNgayLapHD.TabIndex = 1;
             this.dtpNgayLapHD.ValueChanged += new System.EventHandler(this.dtpNgayLapHD_ValueChanged);
             // 
             // tbxTongTien
             // 
             this.tbxTongTien.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.tbxTongTien.Enabled = false;
             this.tbxTongTien.Location = new System.Drawing.Point(134, 97);
             this.tbxTongTien.Margin = new System.Windows.Forms.Padding(4);
             this.tbxTongTien.Name = "tbxTongTien";
             this.tbxTongTien.ReadOnly = true;
             this.tbxTongTien.Size = new System.Drawing.Size(234, 22);
-            this.tbxTongTien.TabIndex = 11;
+            this.tbxTongTien.TabIndex = 3;
             // 
             // label1
             // 
@@ -263,6 +266,7 @@
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.PeachPuff;
             this.panel4.Controls.Add(this.cancel);
             this.panel4.Controls.Add(this.save);
             this.panel4.Location = new System.Drawing.Point(2, 224);
@@ -279,7 +283,7 @@
             this.cancel.Margin = new System.Windows.Forms.Padding(4);
             this.cancel.Name = "cancel";
             this.cancel.Size = new System.Drawing.Size(109, 33);
-            this.cancel.TabIndex = 7;
+            this.cancel.TabIndex = 5;
             this.cancel.Text = "Hủy bỏ";
             this.cancel.UseVisualStyleBackColor = false;
             this.cancel.Click += new System.EventHandler(this.cancel_Click);
@@ -293,7 +297,7 @@
             this.save.Margin = new System.Windows.Forms.Padding(4);
             this.save.Name = "save";
             this.save.Size = new System.Drawing.Size(109, 33);
-            this.save.TabIndex = 6;
+            this.save.TabIndex = 4;
             this.save.Text = "Lưu hóa đơn";
             this.save.UseVisualStyleBackColor = false;
             this.save.Click += new System.EventHandler(this.save_Click);
@@ -327,8 +331,10 @@
             // 
             // NewHoaDonTinhCuoc_UI
             // 
+            this.AcceptButton = this.save;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.cancel;
             this.ClientSize = new System.Drawing.Size(836, 295);
             this.ControlBox = false;
             this.Controls.Add(this.panel4);

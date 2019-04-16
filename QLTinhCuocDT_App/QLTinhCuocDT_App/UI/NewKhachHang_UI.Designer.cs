@@ -66,6 +66,7 @@
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.PeachPuff;
             this.panel4.Controls.Add(this.cancel);
             this.panel4.Controls.Add(this.save);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -104,7 +105,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox2.BackColor = System.Drawing.Color.PeachPuff;
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.tbxDiaChi);
             this.groupBox2.Controls.Add(this.label7);
@@ -247,6 +248,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.PeachPuff;
             this.panel1.Controls.Add(this.label8);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -256,8 +258,10 @@
             // 
             // NewKhachHang_UI
             // 
+            this.AcceptButton = this.save;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.cancel;
             this.ClientSize = new System.Drawing.Size(495, 436);
             this.ControlBox = false;
             this.Controls.Add(this.panel4);

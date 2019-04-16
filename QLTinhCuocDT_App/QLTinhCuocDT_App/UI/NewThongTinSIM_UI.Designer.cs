@@ -43,6 +43,10 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.tbxTenKH = new System.Windows.Forms.TextBox();
             this.dvKhachHang = new System.Windows.Forms.DataGridView();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CMND = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,18 +55,14 @@
             this.ChucVu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.khachHangBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.panel4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvKhachHang)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.khachHangBindingSource)).BeginInit();
             this.panel3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.khachHangBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // cancel
@@ -74,7 +74,7 @@
             this.cancel.Margin = new System.Windows.Forms.Padding(4);
             this.cancel.Name = "cancel";
             this.cancel.Size = new System.Drawing.Size(109, 33);
-            this.cancel.TabIndex = 7;
+            this.cancel.TabIndex = 5;
             this.cancel.Text = "Hủy bỏ";
             this.cancel.UseVisualStyleBackColor = false;
             this.cancel.Click += new System.EventHandler(this.cancel_Click);
@@ -88,13 +88,14 @@
             this.save.Margin = new System.Windows.Forms.Padding(4);
             this.save.Name = "save";
             this.save.Size = new System.Drawing.Size(109, 33);
-            this.save.TabIndex = 6;
+            this.save.TabIndex = 4;
             this.save.Text = "Lưu thông tin SIM";
             this.save.UseVisualStyleBackColor = false;
             this.save.Click += new System.EventHandler(this.save_Click);
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.PeachPuff;
             this.panel4.Controls.Add(this.cancel);
             this.panel4.Controls.Add(this.save);
             this.panel4.Location = new System.Drawing.Point(0, 226);
@@ -104,7 +105,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox2.BackColor = System.Drawing.Color.PeachPuff;
             this.groupBox2.Controls.Add(this.dtpNgayDangKy);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.dtpNgayHetHan);
@@ -125,7 +126,7 @@
             this.dtpNgayDangKy.Location = new System.Drawing.Point(146, 78);
             this.dtpNgayDangKy.Name = "dtpNgayDangKy";
             this.dtpNgayDangKy.Size = new System.Drawing.Size(234, 22);
-            this.dtpNgayDangKy.TabIndex = 26;
+            this.dtpNgayDangKy.TabIndex = 2;
             this.dtpNgayDangKy.ValueChanged += new System.EventHandler(this.dtpNgayDangKy_ValueChanged);
             // 
             // label4
@@ -144,7 +145,7 @@
             this.dtpNgayHetHan.Location = new System.Drawing.Point(146, 117);
             this.dtpNgayHetHan.Name = "dtpNgayHetHan";
             this.dtpNgayHetHan.Size = new System.Drawing.Size(234, 22);
-            this.dtpNgayHetHan.TabIndex = 24;
+            this.dtpNgayHetHan.TabIndex = 3;
             // 
             // label3
             // 
@@ -173,7 +174,7 @@
             this.tbxIDSIM.Margin = new System.Windows.Forms.Padding(4);
             this.tbxIDSIM.Name = "tbxIDSIM";
             this.tbxIDSIM.Size = new System.Drawing.Size(234, 22);
-            this.tbxIDSIM.TabIndex = 21;
+            this.tbxIDSIM.TabIndex = 1;
             // 
             // label2
             // 
@@ -187,6 +188,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.PeachPuff;
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.tbxTenKH);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -203,7 +205,7 @@
             this.tbxTenKH.Name = "tbxTenKH";
             this.tbxTenKH.ReadOnly = true;
             this.tbxTenKH.Size = new System.Drawing.Size(234, 22);
-            this.tbxTenKH.TabIndex = 19;
+            this.tbxTenKH.TabIndex = 6;
             // 
             // dvKhachHang
             // 
@@ -227,6 +229,50 @@
             this.dvKhachHang.Size = new System.Drawing.Size(396, 174);
             this.dvKhachHang.TabIndex = 0;
             this.dvKhachHang.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvKhachHang_CellClick);
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.dvKhachHang);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(3, 67);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(396, 174);
+            this.panel3.TabIndex = 21;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.PeachPuff;
+            this.groupBox1.Controls.Add(this.panel3);
+            this.groupBox1.Controls.Add(this.panel2);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(397, 62);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(402, 244);
+            this.groupBox1.TabIndex = 9;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Chọn khách hàng";
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(304, 19);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(231, 25);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "THÔNG TIN SIM MỚI";
+            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.PeachPuff;
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(800, 61);
+            this.panel1.TabIndex = 8;
             // 
             // MaKH
             // 
@@ -285,53 +331,12 @@
             // 
             this.khachHangBindingSource.DataSource = typeof(QLTinhCuocDT_App.Entity.KhachHang);
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.dvKhachHang);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(3, 67);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(396, 174);
-            this.panel3.TabIndex = 21;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.groupBox1.Controls.Add(this.panel3);
-            this.groupBox1.Controls.Add(this.panel2);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(397, 62);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(402, 244);
-            this.groupBox1.TabIndex = 9;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Chọn khách hàng";
-            // 
-            // label8
-            // 
-            this.label8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(304, 19);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(231, 25);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "THÔNG TIN SIM MỚI";
-            this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(800, 61);
-            this.panel1.TabIndex = 8;
-            // 
             // NewThongTinSIM_UI
             // 
+            this.AcceptButton = this.save;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.cancel;
             this.ClientSize = new System.Drawing.Size(800, 306);
             this.ControlBox = false;
             this.Controls.Add(this.panel4);
@@ -347,11 +352,11 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvKhachHang)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.khachHangBindingSource)).EndInit();
             this.panel3.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.khachHangBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
