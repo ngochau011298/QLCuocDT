@@ -13,18 +13,18 @@
     <script src="Assets/js/pikaday.js"></script>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form style="padding-top:50px; " id="form1" runat="server">
         <div class="container">
             <div class="list-group">
-                <div class="list-group-item">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading text-center">
-                            <h3><asp:Label runat="server" ID="lblnameCustomer"></asp:Label></h3>
+                <div style="border-color:darkred; background-color:peachpuff;" class="list-group-item">
+                    <div style="border-color:DarkRed;" class="panel panel-primary">
+                        <div style="background-color:PeachPuff; border-bottom-color:DarkRed;" class="panel-heading text-center">
+                            <h3 style="color:darkred; font-family:'iCielBC Cubano Normal';font-size:35px;"><asp:Label runat="server" ID="lblnameCustomer"></asp:Label></h3>
                         </div>
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-xs-5">
-                                    <asp:TextBox ID="FromDate" CssClass="form-control" placeholder="From date" runat="server"></asp:TextBox>
+                                    <asp:TextBox BorderColor="DarkRed" ID="FromDate" CssClass="form-control" placeholder="From date" runat="server"></asp:TextBox>
                                     <script type="text/javascript">
                                         var pickerFrom = new Pikaday(
                                             {
@@ -56,7 +56,7 @@
                                     </script>
                                 </div>
                                 <div class="col-xs-5">
-                                    <asp:TextBox ID="ToDate" CssClass="form-control" placeholder="To date" runat="server"></asp:TextBox>
+                                    <asp:TextBox BorderColor="DarkRed" ID="ToDate" CssClass="form-control" placeholder="To date" runat="server"></asp:TextBox>
                                     <script type="text/javascript">
                                         var pickerTo = new Pikaday(
                                             {
@@ -88,21 +88,21 @@
                                     </script>
                                 </div>
                                 <div class="col-xs-2">
-                                    <asp:Button CssClass="btn btn-primary" runat="server" ID="Button1" OnClick="btnSearch_Click" Text="Search" Font-Size="Large" />
+                                    <asp:Button BorderColor="peachpuff" BackColor="PeachPuff" ForeColor="DarkRed" CssClass="btn btn-primary" runat="server" ID="Button1" OnClick="btnSearch_Click" Text="Search" Font-Size="Large" />
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-10">
                                     <div class="input-group">
-                                        <span class="input-group-addon" style="font-size: medium">Month:     </span>
-                                        <asp:DropDownList runat="server" CssClass="dropdown form-control" ID="ddMonth" OnSelectedIndexChanged="ddMonth_SelectedIndexChanged">
+                                        <span BorderColor="DarkRed" class="input-group-addon" style="font-size: medium; font-family:'iCielBC Cubano Normal'; color:darkred; background-color:peachpuff; border-color:darkred">Month:     </span>
+                                        <asp:DropDownList BorderColor="DarkRed" runat="server" CssClass="dropdown form-control" ID="ddMonth" OnSelectedIndexChanged="ddMonth_SelectedIndexChanged">
                                             <asp:ListItem Text="1 tháng gần đây nhất" Value="1"></asp:ListItem>
                                             <asp:ListItem Text="3 tháng gần đây nhất" Value="3"></asp:ListItem>
                                         </asp:DropDownList>
                                     </div>
                                 </div>
                                 <div class="col-xs-2">
-                                    <asp:Button CssClass="btn btn-primary" runat="server" ID="btnSearchByMonth" OnClick="btnSearchByMonth_Click" Text="Search" Font-Size="Large" />
+                                    <asp:Button BorderColor="peachpuff" BackColor="PeachPuff" ForeColor="DarkRed" CssClass="btn btn-primary" runat="server" ID="btnSearchByMonth" OnClick="btnSearchByMonth_Click" Text="Search" Font-Size="Large"/>
                                 </div>
                             </div>
                         </div>
@@ -121,12 +121,12 @@
                         </Columns>
                     </asp:GridView>
                 </div>
-                <div class="list-group-item">
-                    <div class="panel panel-default">
+                <div style="border-color:darkred; background-color:peachpuff;" class="list-group-item">
+                    <div style="color:darkred; border-color:darkred;" class="panel panel-default">
                         <div class="panel-body">
-                            <div class="row align-items-center h-100">
+                            <div  class="row align-items-center h-100">
                                 <div class="col-md-8">
-                                    <h4>Total cost :</h4>
+                                    <h4 style=" font-family:'iCielBC Cubano Normal';">Total cost:</h4>
                                 </div>
                                 <div class="col-md-2">
                                     <span class="text-center">
